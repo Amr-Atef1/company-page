@@ -39,7 +39,7 @@ let spans = document.querySelectorAll(".skills span")
 // *****************************************************************************
 let container=document.querySelector(".stats")
 let nums=document.querySelectorAll(".stats .box p")
-let started=false
+let started=false;
 window.onscroll=function () {
   if (window.scrollY >= section.offsetTop - 200) {
     spans.forEach((span) => {
@@ -49,13 +49,13 @@ window.onscroll=function () {
 
   if (window.scrollY >= container.offsetTop - 200) {
     if (!started) {
-
       nums.forEach((num)=>{
         speedUp(num)})
     }
     started=true;
   }
 }
+
 // *****************************************************************************
 // *****************************************************************************
 // start count up
